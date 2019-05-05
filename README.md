@@ -1,5 +1,7 @@
 # Circle CI ECR Builder
 
-### A utility Docker image based on `docker:stable-git` to assist in Circle CI builds with ECR.
+[![](https://images.microbadger.com/badges/image/clevyr/circleci-ecr-builder.svg)](https://microbadger.com/images/clevyr/circleci-ecr-builder "Get your own image badge on microbadger.com")
+
+## A utility Docker image based on `docker:stable-git` to assist in Circle CI builds with ECR.
 
 This image has make, git, docker, python3, and the AWS CLI installed
