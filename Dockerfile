@@ -26,4 +26,4 @@ RUN set -x \
     && chmod a+x levant \
     && mv levant /usr/local/bin/levant
 
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
