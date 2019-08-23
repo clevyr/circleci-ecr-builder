@@ -9,6 +9,7 @@ RUN set -x \
         openssh-client \
         lftp \
         coreutils \
+        bash \
     && python3 -m ensurepip \
     && rm -r /usr/lib/python*/ensurepip \
     && pip3 install --upgrade \
