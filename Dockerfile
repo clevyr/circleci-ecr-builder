@@ -17,3 +17,5 @@ RUN set -x \
     && if ! command -v python >/dev/null 2>&1; then \
         ln -s /usr/bin/python3 /usr/bin/python; \
     fi
+
+CMD ["/bin/sh"]
