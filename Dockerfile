@@ -6,6 +6,9 @@ RUN set -x \
         make \
         python3 \
         curl \
+        openssh-client \
+        lftp \
+        coreutils \
     && python3 -m ensurepip \
     && rm -r /usr/lib/python*/ensurepip \
     && pip3 install --upgrade \
