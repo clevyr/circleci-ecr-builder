@@ -5,6 +5,7 @@ RUN set -x \
         jq \
         make \
         python3 \
+        curl \
     && python3 -m ensurepip \
     && rm -r /usr/lib/python*/ensurepip \
     && pip3 install --upgrade \
@@ -16,6 +17,9 @@ RUN set -x \
     fi \
     && if ! command -v python >/dev/null 2>&1; then \
         ln -s /usr/bin/python3 /usr/bin/python; \
-    fi
+    fi \
+    && curl -L -o levant https://github.com/jrasell/levant/releases/download/0.2.6/linux-amd64-levant \
+    && chmod a+x levant \
+    && mv levant /usr/local/bin/levant
 
 CMD ["/bin/sh"]
