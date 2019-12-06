@@ -10,6 +10,7 @@ RUN set -x \
         lftp \
         coreutils \
         bash \
+        zip \
     && python3 -m ensurepip \
     && rm -r /usr/lib/python*/ensurepip \
     && pip3 install --upgrade \
